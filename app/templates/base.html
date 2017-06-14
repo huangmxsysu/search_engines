@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<html>
+	<head>
+	    <title>租房搜索</title>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.min.css' %}"> -->
+
+	    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	    
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.component.css' %}">
+		<link rel="stylesheet" href="{% static 'css/listShow.css' %}">
+		<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+	
+		<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<!-- <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" /> -->
+	</head>
+
+
+
+
+	<body>
+	  <div class="layout-header">
+
+	    <div class="nav-footer">
+	      <div class="search">
+	      <form action = '/search/' method = "get">
+	          <input type = "text" id = "search-box" name = "searchword">
+	          <button >搜索</button>
+	        </form>
+	        </div>
+	      <div class="nav-search">
+
+
+	      </div>
+
+	    </div>
+  	</div>
+
+
+	{% block content %}
+	 {% endblock %}
+	   
+	    
+	</body>
+
+
+
+</html>

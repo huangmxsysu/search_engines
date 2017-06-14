@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="list_box">
+	<h1>你查询的字段是:{{searchword}}</h1>
+	{% for item in sousuolist%}
+		
+
+    <div class="list_item">
+      <div class="image_box">
+        <img src="{{item.img}}" alt="">
+      </div>
+      <div class="content_box">
+        <div id="title"><a href = "{{item.url}}">龙岗布吉怡康家园56平米</a></div>
+        <div id="price"><span>租金：</span>{{item.price}}</div>
+        <div id="description"><span>房子描述：</span>{{item.description}}</div>
+        <div id="address"><span>地址：</span>{{item.addr}}</div>
+      </div>
+    </div>
+    <!-- <div class = "list_devider"></div> -->
+
+ 
+
+    {% endfor %}
+ </div>   
+{% endblock %}

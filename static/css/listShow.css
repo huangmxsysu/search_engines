@@ -1,0 +1,72 @@
+  .list_box{
+    width:60%;
+    
+    /*border:1px solid red;*/
+    position: relative;
+    margin:0 auto;
+    margin-top:30px;
+    
+  }
+  .list_item{
+    width:100%;
+    height:200px;
+    position:relative;
+    border:1px solid pink;
+    margin-bottom: 40px;
+  }
+  .image_box{
+    height:180px;
+    width:250px;
+    border:1px solid #999;
+    position: absolute;
+    left:10px;
+    top:10px;
+
+  }
+  .image_box img{
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+
+
+  }
+  .content_box{
+    position: absolute;
+    left:300px;
+    top:10px;
+    border:1px solid blue;
+    text-align: left;
+
+  }
+  .content_box #title{
+
+    font-size:1.5em;
+    margin-bottom:30px;
+  }
+  .content_box #title a{
+    text-decoration: none;
+    color:#111;
+  }
+
+  .content_box #title a:hover{
+    cursor:pointer;
+    color:tomato;
+  }
+  .content_box #price,#description,#address{
+    font-size:1em;
+    color:#555;
+    margin-bottom:15px;
+  }
+  .content_box #price span,#description span,#address span{
+    color:#111;
+  }
+
+  .content_box #price{
+    color:tomato;
+  }
+  .list_devider{
+    position: absolute;
+    border:1px solid red;
+    width:60%;
+    border-bottom:1px solid #999;
+  }
